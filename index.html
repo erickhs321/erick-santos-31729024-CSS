@@ -6,49 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-                <img src="img/perfil.jpg" alt="..." class="rounded-circle img-perfil">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav links  position-fixed">
-                        <a class="nav-item nav-link active" href="#">Home
+
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+            <img src="img/perfil.jpg" alt="..." class="rounded-circle img-perfil">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse position-abs" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto  links">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
                         </a>
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
-                        <a class="nav-item nav-link disabled" href="#">Disabled</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    </li>
 
+                </ul>
+
+            </div>
+
+        </nav>
+        <h1 class="text-center mb-4">Lista de CSS</h1>
+
+
+    </header>
+    <div class="container-fluid">
         <main>
 
             <section class="row">
-                <figure class="col-3">
-                    <img src="img/SVG_logo.svg" class="img-fluid rounded" alt="">
+                <figure class="col-lg-6">
+                    <img src="img/eua.svg" class=" rounded svg-logo" alt="">
+                    <caption>
+                        <p class="text-center font-weight-bold font">Bandeira dos EUA no formato svg</p>
+                        
+                    </caption>
                 </figure>
-                <div class="col-9">
-                    <h2>Tecnologia svg</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque consectetur distinctio architecto
-                        assumenda accusamus quaerat error corporis, eum accusantium deleniti, quae nulla quam sapiente rem
-                        nam hic officiis nisi!</p>
-                    <p></p>
+                <div class="col-lg-6">
+                    <h2>Tecnologia SVG</h2>
+                    <p class="text-justify">
+                        Sigla para <span class="font-weight-bold"> Scalable Vector Graphics</span>,  foi criado especialmente para a web e funciona tanto
+                        com imagens estáticas quanto com animações em duas dimensões. Em vez de definir as 
+                        imagens com colunas e linhas de pixels, o SVG usa primitivas geométricas como pontos, linhas, 
+                        curvas e polígonos para representar a imagem. É o que chamamos de gráficos vetoriais.                         
+                        Como imagens vetoriais usam expressões matemáticas para redimensionar o gráfico, não temos perda na definição da imagem.
+                    </p>
+                    
+                    <h3>Vantagens em relação a imagens do tipo bitmap(mapa de bits)</h3>
+                    <p>
+                        <ul>
+                            <li> 
+                                Não degradam quando escaladas para menor ou maior.
+                            </li>
+                            <li> Os arquivos são menores resultando em redução do tempo de carregamento.</li>
+                            
+                            <li>Suportam nativamente a linguagem SMIL destinada a animações sem necessidade de uso da JavaScript.</li>
+                            <li>
+                                    Possibilitam o uso de JavaScript para percorrer o DOM XML e interagir com o gráfico.
+                            </li>
+                            <li> Você pode manipular a cor de fundo e bordas dos elementos do SVG com CSS</li>
+                        </ul>    
+                    </p>
+
+                    <h3>Desvantagens</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                A desvantagem, em contra-partida, 
+                                é que você não pode mais contar com o cache do navegador, 
+                                já que o elemento será adicionado diretamente ao documento.
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </section>
             <section class="row">
-                <figure class="col-4">
+                <figure class="col-lg-4">
                     <a href="http://google.com" target="_blank">
                         <img src="img/fizz.jpg" class="img-fluid rounded" alt="">
                     </a>
@@ -57,8 +121,8 @@
                         <p>o braum é as viagem</p>
                     </caption>
                 </figure>
-                <figure class="col-4">
-                    <a href="#"  target="_blank">
+                <figure class="col-lg-4">
+                    <a href="#" target="_blank">
                         <img src="img/fizz.jpg" class="img-fluid rounded" alt="">
                     </a>
                     <caption>
@@ -66,7 +130,7 @@
                         <p>o braum é as viagem</p>
                     </caption>
                 </figure>
-                <figure class="col-4"  target="_blank">
+                <figure class="col-lg-4" target="_blank">
                     <a href="#">
                         <img src="img/fizz.jpg" class="img-fluid rounded" alt="">
                     </a>
@@ -75,7 +139,7 @@
                         <p>o braum é as viagem</p>
                     </caption>
                 </figure>
-                <figure class="col-4"  target="_blank">
+                <figure class="col-lg-4" target="_blank">
                     <a href="#">
                         <img src="img/fizz.jpg" class="img-fluid rounded" alt="">
                     </a>
@@ -84,7 +148,7 @@
                         <p>o braum é as viagem</p>
                     </caption>
                 </figure>
-                <figure class="col-4"  target="_blank">
+                <figure class="col-lg-4" target="_blank">
                     <a href="#">
                         <img src="img/fizz.jpg" class="img-fluid rounded" alt="">
                     </a>
@@ -93,7 +157,7 @@
                         <p>o braum é as viagem</p>
                     </caption>
                 </figure>
-                <figure class="col-4"  target="_blank">
+                <figure class="col-lg-4" target="_blank">
                     <a href="#">
                         <img src="img/fizz.jpg" class="img-fluid rounded" alt="">
                     </a>
@@ -105,6 +169,31 @@
 
             </section>
         </main>
+
+
+        <footer class="row bg-dark text-white">
+            <div class="col-md-3 border border-white rounded">
+                <h3>HTML5</h3>
+                <p>é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web</p>
+            </div>
+            <div class="col-md-3 border border-white rounded">
+                <h3>CSS3</h3>
+                <p>
+                    O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência)
+                    em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação
+                </p>
+            </div>
+            <div class="col-md-3 border border-white rounded">
+                <h3>Javascript</h3>
+                <p>JS Javascript é uma linguagem de programação utilizada para controlar o HTML e o CSS para manipular comportamentos
+                    na página.</p>
+            </div>
+            <div class="col-md-3 border border-white rounded">
+                <h3>JSON</h3>
+                <p>é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web</p>
+
+            </div>
+        </footer>
     </div>
 
 </body>
