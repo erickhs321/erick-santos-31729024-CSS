@@ -17,6 +17,20 @@ footer  p{
 nav .links{
     
     position: absolute;
-    right:1%;   
+    right:1%;  
+   
+}
 
+.nav-link{
+    color: #ffff !important;
+    font-size: 18px;
+    margin: auto 5px !important; 
+    
+}
+.nav-link:hover{
+    
+    
+
+    background-color:#B22222;
+    border-radius: 5px;
 }
