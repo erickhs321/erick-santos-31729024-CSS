@@ -21,16 +21,16 @@ nav .links{
    
 }
 
-.nav-link{
+
+.nav-link, .nome-ra{
     color: #ffff !important;
     font-size: 18px;
     margin: auto 5px !important; 
     
 }
-.nav-link:hover{
-    
-    
+.nav-link:hover{   
 
     background-color:#B22222;
     border-radius: 5px;
 }
+
